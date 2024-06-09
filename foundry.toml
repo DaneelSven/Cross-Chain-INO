@@ -7,5 +7,15 @@ test = "test/"
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
 solc_version = "0.8.20"
 optimizer_runs = 800
-via_ir = true
-ffi = true
+
+# via_ir = true #  (via Intermediate Representation) is an option that allows the Solidity compiler to generate Yul (an intermediate representation) as an intermediate step before generating the final EVM bytecode
+ffi = true #ffi in Foundry allows scripts to call external system commands and processes, enabling integration with external tools directly from Foundry.
+
+fs_permissions = [
+    { access = "read-write", path = "./" },
+    { access = "read-write", path = "/tmp/" },
+]
+
+# [profile.release]
+# optimize = true
+# optimize_runs = 200

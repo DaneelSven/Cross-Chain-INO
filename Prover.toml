@@ -1,0 +1,8 @@
+# Prover.toml is used for specifying the input values for executing and proving the program. 
+#You can specify toml files with different names by using the --prover-name or -p flags, see the Prover section below. 
+#Optionally you may specify expected output values for prove-time checking as well.
+
+# Prover.toml
+bid = "123"
+secret = "456"
+public_hash = "19620391833206800292073497099357851348339828238212863168390691880932172496143"

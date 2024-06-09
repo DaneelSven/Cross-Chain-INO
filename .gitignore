@@ -8,3 +8,5 @@ out
 cache
 lib/
 broadcast/
+target/
+proofs

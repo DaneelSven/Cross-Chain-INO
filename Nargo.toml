@@ -1,0 +1,21 @@
+# Nargo.toml contains the environmental options of your project. It contains a "package" section and a "dependencies" section.
+
+[package]
+# Name of your Noir package
+name = "InitialNftOffering"
+# Version of your Noir package
+version = "0.1.0"
+# Authors of the package
+authors = ["Sven"]
+# Description of the package
+description = "Private auction of Initial nft offering"
+
+type = "bin"
+entry = "contracts/NoirProof.nr"
+
+[dependencies]
+string_utils = { tag = "main", git = "https://github.com/madztheo/noir-string-utils.git" }
+
+
+# good noir templates and help
+# https://github.com/noir-lang/awesome-noir?tab=readme-ov-file#boilerplates
