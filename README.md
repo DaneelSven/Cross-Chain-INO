@@ -37,3 +37,8 @@ This project implements a cross-chain Initial NFT Offering (INO) with account ab
    ```sh
    git clone https://github.com/your-repo/cross-chain-ino.git
    cd cross-chain-ino
+
+
+2. install foundry submodules
+`git submodule init`
+`git submodule update`
